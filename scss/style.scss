@@ -1,18 +1,144 @@
-
-.box {
-  background-color: #ccc;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 15px;
-  height: 100%;
+// start ba-nav-menu header
+.ba-header {
+  padding: 43px 0 65px;
+  background: {
+    color: #fafafb;
+    image: url(../images/img.jpg);
+    size: cover;
+  }
+  .ba-nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .ba-logo__icon {
+      width: 126px;
+      height: 52px;
+    }
+    .ba-nav-bar__menu {
+      display: flex;
+      .ba-nav-bar__item {
+        margin-right: 38px;
+        font-weight: bold;
+        line-height: 25px;
+        margin-top: 10px;
+        border-top: 3px solid transparent;
+        transition: 0.3s;
+        &:last-child {
+          margin-right: 0;
+        }
+        &:hover {
+          border-color: #ff6033;
+        }
+      }
+    }
+  }
+  .ba-header-desc {
+    padding-top: 229px;
+    margin-bottom: 290px;
+    &__title {
+      font-size: 3.75rem;
+      font-weight: bold;
+      margin-bottom: 27px;
+    }
+    &__text {
+      line-height: 27px;
+      font-weight: 300;
+      margin-bottom: 48px;
+    }
+    &__link {
+      background-color: #ff6033;
+      color: #fff;
+      padding: 16px 25px;
+      border: 1px solid transparent;
+      transition: 0.3s;
+      &:hover {
+        border-color: #ff6033;
+        color: #ff6033;
+        background-color: transparent;
+      }
+      &:active {
+        border-color: #4582c7;
+      }
+      &:focus {
+        border-color: #1e7962;
+      }
+    }
+  }
+  .ba-scroll {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .ba-scroll__item {
+      width: 25px;
+      height: 40px;
+    }
+  }
 }
-.btn {
-  background: $primaryColor;
-  min-width: 100px;
-  padding: 0 .1em;
 
-  &:hover {
-    @include buttonHover;
+// start section ba-about
+
+.ba-about {
+  padding: 75px 155px 70px 157px;
+  background-color: #00baba;
+  .ba-about-us {
+    display: flex;
+    justify-content: space-between;
+    .ba-about-desc {
+      padding-top: 162px;
+      &__title {
+        font-size: 5.625rem;
+        color: #fff;
+        font-weight: bold;
+      }
+      &__text {
+        color: #fff;
+        line-height: 27px;
+        font-weight: 300;
+        &--margin {
+          margin-top: 13px;
+        }
+      }
+    }
+  }
+}
+
+// start section services
+
+.ba-services {
+  padding: 105px 0 145px;
+  background: {
+    color: #70bfff;
+    image: url(../images/tomato.png);
+    repeat: no-repeat;
+    position-x: right;
+    size: contain;
+  }
+
+  .ba-wrapper {
+    display: flex;
+    .ba-shopping {
+      padding-top: 75px;
+      &__item {
+        display: flex;
+        align-items: center;
+        padding: 35px 50px;
+        border-right: 1px solid #9d9d9d;
+        margin-bottom: 15px;
+        text-align: center;
+        font-size: 1.25rem;
+        font-weight: bold;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+      .ba-cart {
+        width: 50px;
+        height: 43px;
+        &--carrot {
+          width: 57px;
+          height: 57px;
+        }
+      }
+    }
   }
 }
